@@ -1,104 +1,70 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html>
+    <link href="myresume.css" rel="stylesheet" type="text/css">
+<a href="index.html" class="button"> Go Back to Homepage</a>
 
-html{
-    color:#222;
-    line-height: 1.5;
-}
-
-h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    border-top: 1px solid #888;
-    border-bottom: 1px solid #888;
-    padding: 1rem 0;
-    margin-bottom: 2rem;
-}
-
-h3 {
-    font-size: 1rem;
-    text-transform: uppercase;
-    color:salmon;
-}
-
-p {
-    line-height: 1.5;
-}
-
-section + section {
-    margin-top: 2rem;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.profile{
-    text-align:center;
-}
-
-.profile img{
-  border-radius: 9999px;
-  width: 15rem;
-  height: 15rem;
-}
-
-.profile p{
-    color:#888;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-}
-
-.contact ul{
-    margin-top: -2rem;  
-}
-
-.contact li {
-    text-align: right;
-    text-transform: uppercase;
-    padding: 1rem;
-    color: #888;
-    border-bottom: 1px solid #888;
-}
-
-.skills > ul{
-   display:grid;
-   grid-template-columns: 1fr 1fr;
-   grid-gap: 1rem;
-}
-
-.event + .event{
-    padding-top: 1rem;
-
-}
-
-.event{
-    display:grid;
-    grid-template-columns: 5cj 1fr;
-
-}
-
-.content{
-    border-left: 1px solid #888;
-    padding-left: 1rem;
-    margin-left: 1rem;
-}
-
-.content > h3+p{
-    margin-bottom: 1rem;
-}
-
-.resume {
-    display:grid;
-    grid-template-columns: 40% 1fr;
-    grid-gap: 2rem;
-}
+    <div class="resume">
+        <div class="column">
+            <section class="profile">
+                <h1>Coder6699</h1>
+                <p>Highschool Student</p>
+                <img src="https://cdn.glitch.global/fd530000-d398-407c-bd48-e1afed21bdf8/profile1.jpg?v=1645877389138" alt="" width="300" height="300">
+            </section>
+        
+            <section class="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>123 Street City</li>
+                    <li><a href="abcdef@gmail.com">coder.69@mail.ru</a></li>
+                    <li><a href="https://edu.com">Discord: prpr#1079</a></li>
+                    <li><a href="Tel:0855555555">092xxxxxxx</a></li>
+                </ul>
+            </section>
+        
+            <section class="skills" id="skill">
+                <h2>Capabilities/Skills</h2>
+                <ul>
+                    <li><h3>Professional</h3></li>
+                    <ul>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>C</li>
+                        <li>c++</li>
+                        <li>Node.js</li>
+                        <li>Design webpage</li></li>
+                    </ul>
+                    
+                </ul>
+            </section>
+        </div>
+        <div class="column">
+            <section class="education">
+                <h2>Education</h2>
+                <ul class="timeline">
+                    <li class="event">
+                        <span class="duration">2018 - 2022</span>
+                        <div class="content">
+                            <h3>KMIDS</h3>
+                            <p>School</p>
+                            <p>I am a grade 11 student in King Mongkut school, I am in software engineering path</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="experience">
+            <h2>Experience</h2>
+            <ul class="timeline">
+                <li class="event">
+                    <span class="duration">2020-Present</span>
+                    <h3>Part-time</h3>
+                    <p>& Hobbies</p>
+                    <p>Design webpage, Make JS-base game, develop android application, develop browser extension, make game modifications</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+</html>
